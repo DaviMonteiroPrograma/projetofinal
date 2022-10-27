@@ -6,11 +6,12 @@ body[b-xvo6mib1ny]{
     background-size: cover;
 	min-height:100vh;
 	font-family: 'Noto Sans', sans-serif;
+    color: #fff;
 }
 .box[b-xvo6mib1ny]{
-	position:absolute;
+	position:left;
 	left:50%;
-	top:50%;
+	top:20%;
 	transform: translate(-50%,-50%);
     background-color: rgba(0, 0, 0, 0.89);
 	border-radius:3px;
@@ -24,4 +25,27 @@ body[b-xvo6mib1ny]{
     padding:8px 0 5px 0;
     font-size:16px;
     color:#fff;
+  }
+
+  .nav[b-xvo6mib1ny]{
+      width: 200px;
+      height: 800px;
+      padding: 10px;
+      background: #555;
+      color: #fff;
+  }
+
+
+  ul[b-xvo6mib1ny]{
+    padding-left: 0rem;
+  }
+
+li[b-xvo6mib1ny] {
+    list-style: none;
+
+  }
+
+  a[b-xvo6mib1ny]{
+      text-decoration: none;
+      color: #fff;
   }

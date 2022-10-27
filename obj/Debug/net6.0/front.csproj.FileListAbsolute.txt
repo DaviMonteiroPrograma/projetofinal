@@ -52,7 +52,7 @@ C:\Users\Aluno\Documents\GitHub\projetofinal\obj\Debug\net6.0\scopedcss\Shared\M
 C:\Users\Aluno\Documents\GitHub\projetofinal\obj\Debug\net6.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
 C:\Users\Aluno\Documents\GitHub\projetofinal\obj\Debug\net6.0\scopedcss\bundle\front.styles.css
 C:\Users\Aluno\Documents\GitHub\projetofinal\obj\Debug\net6.0\scopedcss\projectbundle\front.bundle.scp.css
-C:\Users\Aluno\Documents\GitHub\projetofinal\obj\Debug\net6.0\refint\front.dll
 C:\Users\Aluno\Documents\GitHub\projetofinal\obj\Debug\net6.0\front.genruntimeconfig.cache
 C:\Users\Aluno\Documents\GitHub\projetofinal\obj\Debug\net6.0\ref\front.dll
 C:\Users\Aluno\Documents\GitHub\projetofinal\obj\Debug\net6.0\scopedcss\Pages\PagIni.razor.rz.scp.css
+C:\Users\Aluno\Documents\GitHub\projetofinal\bin\Debug\net6.0\ref\front.dll
