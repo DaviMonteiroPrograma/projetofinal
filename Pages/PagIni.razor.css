@@ -9,7 +9,7 @@ body{
     color: #fff;
 }
 .box{
-	position:left;
+	position:absolute;
 	left:50%;
 	top:20%;
 	transform: translate(-50%,-50%);
@@ -34,6 +34,19 @@ body{
       background: #555;
       color: #fff;
   }
+
+.Direita{
+    position: right;
+    width: 500px;
+    height: 400px;
+    padding: 10px;
+    background: #555;
+    color: #fff;
+}
+    
+        
+
+
 
 
   ul{
