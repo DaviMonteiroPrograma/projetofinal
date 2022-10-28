@@ -226,5 +226,16 @@ body[b-l5sr92se35]{
 	min-height:100vh;
 	font-family: 'Noto Sans', sans-serif;
 }
+
+
+
+.nav[b-l5sr92se35]{
+	position:center;
+	width: 10000px;
+	height: 800px;
+	padding: 10px;
+	background-color: rgba(0, 0, 0, 0.89);
+	color: #fff;
+}
 /* _content/front/Shared/MainLayout.razor.rz.scp.css */
 /* _content/front/Shared/NavMenu.razor.rz.scp.css */
