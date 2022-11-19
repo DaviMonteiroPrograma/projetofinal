@@ -87,3 +87,4 @@ C:\Users\DAVI\Documents\GitHub\projetofinal\obj\Debug\net6.0\front.pdb
 C:\Users\DAVI\Documents\GitHub\projetofinal\obj\Debug\net6.0\front.genruntimeconfig.cache
 C:\Users\DAVI\Documents\GitHub\projetofinal\obj\Debug\net6.0\ref\front.dll
 C:\Users\Aluno\Documents\GitHub\projetofinal\obj\Debug\net6.0\scopedcss\Pages\Ajuda.razor.rz.scp.css
+C:\Users\DAVI\Documents\GitHub\projetofinal\obj\Debug\net6.0\scopedcss\Pages\Ajuda.razor.rz.scp.css
