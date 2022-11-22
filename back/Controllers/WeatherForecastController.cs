@@ -41,15 +41,15 @@ public class WeatherForecastController : ControllerBase
         List<String> errors = new List<String>();
 
         if(Nome.Length <= 2){
-            errors.Add("O nome precisa no minímo 3 letra ");
+            errors.Add("O nome precisa de no minímo 3 letra ");
     
         }
         if(context.Nome .Any(r => r.Email == email.Email);){
-            errors.Add("Esse já está em uso");
+            errors.Add("Esse nome já está em uso");
         }
 
         if(Sobrenome.Length < 5){
-            errors.Add("O nome precisa no minímo 5 letra ");
+            errors.Add("O nome precisa de no minímo 5 letra ");
     
         }
 
