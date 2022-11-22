@@ -33,7 +33,7 @@ public class WeatherForecastController : ControllerBase
     }
     [Httppost("Registro")];
     public IActionResult Registro(
-        [FromBody]Login email
+        [FromBody]Registro email
         )
     {
         using TCCsenai context = new tccsenaicontext();
@@ -44,7 +44,7 @@ public class WeatherForecastController : ControllerBase
             errors.Add("O nome precisa no minímo 3 letra ");
     
         }
-        if(context.Nome .Any(e => e.Email == email.Email);){
+        if(context.Nome .Any(r => r.Email == email.Email);){
             errors.Add("Esse já está em uso");
         }
 
