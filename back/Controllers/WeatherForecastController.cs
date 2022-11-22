@@ -71,7 +71,15 @@ public class WeatherForecastController : ControllerBase
         return Ok();
         
     }
+        using TCCsenai context = new tccsenaicontext();
+    {  
+    [Httppost("Telaini")];
+    public IActionResult Registro(
+        [FromBody]Botões btn
+    )
+    }    
 
+        using TCCsenai context = new tccsenaicontext();
 
     private static readonly string[] Summaries = new[]
     {
