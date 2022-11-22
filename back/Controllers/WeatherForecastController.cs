@@ -1,11 +1,78 @@
 using Microsoft.AspNetCore.Mvc;
+using dto;
+ 
 
 namespace back.Controllers;
 
+using Services;
+using Model;
+
 [ApiController]
-[Route("[controller]")]
+[Route("Usuario")]
 public class WeatherForecastController : ControllerBase
 {
+    [Httppost("Login")]
+    public async Task<IActionResult> Login(
+        [FromBody]Login email,
+        [FromServices]TokenService services
+    )
+    {
+        using TCCsenai context = new tccsenaicontext();
+
+        var possibleEmail = context.email.FirstOrDefault(e => e.Email == email.Email);
+
+        if(possibleemail == nuull){
+            return NotFound("Email inválido");
+        }
+        if(possibleSenha.senha != email.senha){
+            return NotFound("Senha Inválida");
+        }    
+
+        var token = await service.CreateToken(possibleemail);
+        return Ok(token.Value);
+    }
+    [Httppost("Registro")];
+    public IActionResult Registro(
+        [FromBody]Login email
+        )
+    {
+        using TCCsenai context = new tccsenaicontext();
+
+        List<String> errors = new List<String>();
+
+        if(Nome.Length <= 2){
+            errors.Add("O nome precisa no minímo 3 letra ");
+    
+        }
+        if(context.Nome .Any(e => e.Email == email.Email);){
+            errors.Add("Esse já está em uso");
+        }
+
+        if(Sobrenome.Length < 5){
+            errors.Add("O nome precisa no minímo 5 letra ");
+    
+        }
+
+        if(senha.Length <= 5){
+            errors.Add("senha precisa ter pelo menos 5 caracteres");
+        }
+
+        if(Repetirsenha != senha){
+            errors.Add("As senhas não são iguais");
+        }
+
+        if(Repetirsenha == senha){
+            return ("registro completo");
+        }
+        
+        context.Add(Email);
+        context.SaveChanges;
+
+        return Ok();
+        
+    }
+
+
     private static readonly string[] Summaries = new[]
     {
         "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
