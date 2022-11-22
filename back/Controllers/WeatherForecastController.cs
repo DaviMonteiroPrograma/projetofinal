@@ -76,7 +76,7 @@ public class WeatherForecastController : ControllerBase
     [Httppost("Telaini")];
     public IActionResult Registro(
         [FromBody]Botões btn
-    )
+         )
     }    
 
         using TCCsenai context = new tccsenaicontext();
