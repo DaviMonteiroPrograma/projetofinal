@@ -71,7 +71,7 @@ public class WeatherForecastController : ControllerBase
         return Ok();
         
     }
-        using TCCsenai context = new tccsenaicontext();
+        
     {  
     [Httppost("Telaini")];
     public IActionResult Registro(
