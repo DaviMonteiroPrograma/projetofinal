@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using dto;
+using Microsoft.Data.SqlClient;
  
 
 namespace back.Controllers;
@@ -64,22 +65,34 @@ public class WeatherForecastController : ControllerBase
         if(Repetirsenha == senha){
             return ("registro completo");
         }
-        
+         public void ReadOrderData(string connectionString)
+        {
+            string queryString =
+                "SELECT id, Nome, Sobrenome, Email, Senha  FROM dbo.registro;";
+            using (SqlConnection connection = new SqlConnection(
+                       connectionString))
+            {
+                SqlCommand command = new SqlCommand(
+                    queryString, connection);
+                connection.Open();
+                using (SqlDataReader reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        Console.WriteLine(String.Format("{0}, {1}",
+                            reader[0], reader[1]));
+                    }
+                }
+            } 
         context.Add(Email);
         context.SaveChanges;
-
+        ReadOrderData("Data Source=(local);"
+                + "Integrated Security=SSPI");
         return Ok();
         
     }
         
     {  
-    [Httppost("Telaini")];
-    public IActionResult Registro(
-        [FromBody]Botões btn
-         )
-    }    
-
-        using TCCsenai context = new tccsenaicontext();
 
     private static readonly string[] Summaries = new[]
     {
