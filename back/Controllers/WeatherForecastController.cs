@@ -37,8 +37,6 @@ public class WeatherForecastController : ControllerBase
         [FromBody]Registro email
         )
     {
-        using TCCsenai context = new tccsenaicontext();
-
         List<String> errors = new List<String>();
 
         if(Nome.Length <= 2){
@@ -65,6 +63,21 @@ public class WeatherForecastController : ControllerBase
         if(Repetirsenha == senha){
             return ("registro completo");
         }
+         Nome usuario = new nome();
+        Nome.name = Registro.nome;
+        Nome.Sobrenome = Registro.Sobrenome;
+        Email.Senha = Senha.senha;
+
+        context.Add(nome);
+        context.SaveChanges();
+        return(ok);
+
+         [HttpPost("update")]
+         public IActionResult UpdateName()
+         {
+            throw new NotImplementedException();
+         }
+
          public void ReadOrderData(string connectionString)
         {
             string queryString =
