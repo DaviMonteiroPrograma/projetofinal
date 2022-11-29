@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Aluno\\Documents\\GitHub\\projetofinal\\front.csproj",
+      "projectUniqueName": "C:\\Users\\Aluno\\Documents\\GitHub\\projetofinal\\front\\front.csproj",
       "projectName": "front",
-      "projectPath": "C:\\Users\\Aluno\\Documents\\GitHub\\projetofinal\\front.csproj",
+      "projectPath": "C:\\Users\\Aluno\\Documents\\GitHub\\projetofinal\\front\\front.csproj",
       "packagesPath": "C:\\Users\\Aluno\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Aluno\\Documents\\GitHub\\projetofinal\\obj\\",
+      "outputPath": "C:\\Users\\Aluno\\Documents\\GitHub\\projetofinal\\front\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
