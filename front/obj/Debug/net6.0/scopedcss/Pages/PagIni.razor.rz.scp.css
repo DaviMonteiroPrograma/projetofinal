@@ -1,38 +1,37 @@
 body[b-xvo6mib1ny]{
-	background-image: url(https://www.nasa.gov/sites/default/files/thumbnails/image/blackholexray.png);
+	background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/223e6792880429.5e569ff84ebef.gif);
 	background-position: center;
-    background-origin: content-box;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-origin: content-box;
+  background-repeat: no-repeat;
+  background-size: cover;
 	min-height:100vh;
 	font-family: 'Noto Sans', sans-serif;
-    color: #fff;
+  color: #fff;
 }
 .box[b-xvo6mib1ny]{
 	position:absolute;
 	left:50%;
 	top:20%;
-	transform: translate(-50%,-50%);
-    background-color: rgba(0, 0, 0, 0.89);
+  background-color: rgba(0, 0, 0, 0.89);
 	border-radius:3px;
 	padding:70px 100px;
 }
 .input-container input[b-xvo6mib1ny]{ 
-    border:0;
-    border-bottom:1px solid #555;  
-    background:transparent;
-    width:100%;
-    padding:8px 0 5px 0;
-    font-size:16px;
-    color:#fff;
+   border:0;
+   border-bottom:1px solid #555;  
+   background:transparent;
+   width:100%;
+   padding:8px 0 5px 0;
+   font-size:16px;
+   color:#fff;
   }
 
   .nav[b-xvo6mib1ny]{
-      width: 200px;
-      height: 800px;
-      padding: 10px;
-      background: #555;
-      color: #fff;
+    width: 200px;
+    height: 800px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.89);
+    color: #fff;
   }
 
     
@@ -57,4 +56,17 @@ li[b-xvo6mib1ny] {
   a[b-xvo6mib1ny]{
       text-decoration: none;
       color: #fff;
+  }
+  button[b-xvo6mib1ny]{
+  color:#fff;
+  background-color:#4B0082;
+  outline: none;
+  border: 0;
+  color: #fff;
+  padding: 3px 20px;
+  text-transform: uppercase;
+  margin-top: 0px;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
   }

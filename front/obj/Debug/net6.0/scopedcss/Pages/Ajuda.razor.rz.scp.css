@@ -11,11 +11,10 @@ body[b-zgg37buu0u]{
     position: left;
     left: 50%;
     /* top: 20%; */
-    transform: translate(-50%,-50%);
     background-color: rgba(0, 0, 0, 0.89);
     border-radius: 3px;
-    padding: 62px 100px;
-    margin-top: 57%;
+    padding: 41px 154px;
+    margin-top: 0%;
 }
 .voltar[b-zgg37buu0u]{
     
@@ -23,14 +22,4 @@ body[b-zgg37buu0u]{
   position: absolute;
   left: 88%;
 
-}
-.boxvol[b-zgg37buu0u]{
-    position: left;
-    left: 50%;
-    /* top: 20%; */
-    transform: translate(-50%,-50%);
-    background-color: rgba(0, 0, 0, 0.89);
-    border-radius: 3px;
-    padding: 10px 15px;
-    
 }

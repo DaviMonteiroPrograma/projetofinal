@@ -1,5 +1,5 @@
 body{
-	background-image: url(https://www.nasa.gov/sites/default/files/thumbnails/image/blackholexray.png);
+	background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/223e6792880429.5e569ff84ebef.gif);
 	background-position: center;
   background-origin: content-box;
   background-repeat: no-repeat;
@@ -12,7 +12,6 @@ body{
 	position:absolute;
 	left:50%;
 	top:20%;
-	transform: translate(-50%,-50%);
   background-color: rgba(0, 0, 0, 0.89);
 	border-radius:3px;
 	padding:70px 100px;
@@ -57,4 +56,17 @@ li {
   a{
       text-decoration: none;
       color: #fff;
+  }
+  button{
+  color:#fff;
+  background-color:#4B0082;
+  outline: none;
+  border: 0;
+  color: #fff;
+  padding: 3px 20px;
+  text-transform: uppercase;
+  margin-top: 0px;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
   }
