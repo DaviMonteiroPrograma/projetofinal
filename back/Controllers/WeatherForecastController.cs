@@ -1,12 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
 using dto;
-
+using Model;
  
 
 namespace back.Controllers;
-
-
-using Model;
 
 [ApiController]
 [Route("Login")]
