@@ -11,7 +11,7 @@ public class WeatherForecastController : ControllerBase
 {
     [Httppost("Login")]
     public async Task<IActionResult> Login(
-        [FromBody]Login email, Senha senha
+        [FromBody]Login email, Senha senha,
         [FromServices] TokenService service
     )
     {
@@ -76,6 +76,12 @@ public class WeatherForecastController : ControllerBase
     public IActionResult UpdateName()
     {
         throw new NotImplementedException();
-    }    
+    }   
 
+     [HttpPost("Telaini")]
+     public IActionResult Telaini([FromBody]Placa_M placam, Placade_V placadev, Armazenamento amr, Armazenamento_Ram aram, W_cooler wcol, Cooler cl, Processador pcd, Gabinete gab, Monitor mon, Fonte Fon)
+    {
+        if()
+
+    }   
 }
