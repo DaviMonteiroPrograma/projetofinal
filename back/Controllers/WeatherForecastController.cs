@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using dto;
 using Model;
- 
+using Services;
 
 namespace back.Controllers;
 
@@ -12,23 +12,24 @@ public class WeatherForecastController : ControllerBase
     [Httppost("Login")]
     public async Task<IActionResult> Login(
         [FromBody]Login email, Senha senha
-        
+        [FromServices] TokenService service
     )
     {
-        using TCCsenai context = new tccsenaicontext();
+        using TCCsenai TCCsenaicontext = new tccsenaicontext();
 
-        var possibleEmail = context.email.FirstOrDefault(e => e.Email == email.Email);
-        var possibleSenha = context.senha.FirstOrDefault(s => s.Senha == senha.Senha);
+        var possibleEmail = TCCsenaicontext.email.FirstOrDefault(e => e.Email == email.Email);
+        var possibleSenha = TCCsenaicontext.senha.FirstOrDefault(s => s.Senha == senha.Senha);
         if(possibleemail == nuull){
             return NotFound("Email inválido");
         }
         if(possibleSenha.senha != senha.Senha){
             return NotFound("Senha Inválida");
         }    
-
+        var token = await service.CreateToken(possibleEmail, possibleSenha);
+        return Ok(token.Value);
      
     }
-    [Httppost("Registro")];
+    [Httppost("Registro")]
     public IActionResult Registro([FromBody]Registro email, Nome nome, Sobrenome sobrenome, Senha senha, Repetirsenha repetirsenha)
     {
         List<String> errors = new List<String>();
@@ -37,7 +38,7 @@ public class WeatherForecastController : ControllerBase
             errors.Add("O nome precisa de no minímo 3 letra ");
         }
         
-        if(context.Nome .Any(r => r.Email == email.Email)){
+        if(TCCsenaicontext.Nome.Any(e => e.Email == email.Email)){
             errors.Add("Esse nome já está em uso");
         }
 
@@ -62,16 +63,19 @@ public class WeatherForecastController : ControllerBase
         Nome.Sobrenome = Registro.Sobrenome;
         Email.Senha = Senha.senha;
 
-        context.Add(nome);
-        context.SaveChanges();
+        TCCsenaicontext.Add(nome);
+        TCCsenaicontext.SaveChanges();
         return ok();
 
-        context.Add(Email);
-        context.SaveChanges;
+        TCCsenaicontext.Add(Email);
+        TCCsenaicontext.SaveChanges;
         return Ok();
         
     }
-        
-    
+     [HttpPost("update")]
+    public IActionResult UpdateName()
+    {
+        throw new NotImplementedException();
+    }    
 
 }
