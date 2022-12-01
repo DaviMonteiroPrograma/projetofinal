@@ -29,9 +29,7 @@ public class WeatherForecastController : ControllerBase
      
     }
     [Httppost("Registro")];
-    public IActionResult Registro(
-        [FromBody]Registro email, Nome nome, Sobrenome sobrenome, Senha senha, Repetirsenha repetirsenha
-    )
+    public IActionResult Registro([FromBody]Registro email, Nome nome, Sobrenome sobrenome, Senha senha, Repetirsenha repetirsenha)
     {
         List<String> errors = new List<String>();
 
@@ -39,7 +37,7 @@ public class WeatherForecastController : ControllerBase
             errors.Add("O nome precisa de no minímo 3 letra ");
         }
         
-        if(context.Nome .Any(r => r.Email == email.Email);){
+        if(context.Nome .Any(r => r.Email == email.Email)){
             errors.Add("Esse nome já está em uso");
         }
 
@@ -66,13 +64,7 @@ public class WeatherForecastController : ControllerBase
 
         context.Add(nome);
         context.SaveChanges();
-        return(ok);
-
-         [HttpPost("update")]
-         public IActionResult UpdateName()
-         {
-            throw new NotImplementedException();
-         }
+        return ok();
 
         context.Add(Email);
         context.SaveChanges;
