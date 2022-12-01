@@ -78,25 +78,6 @@ public class WeatherForecastController : ControllerBase
             throw new NotImplementedException();
          }
 
-         public void ReadOrderData(string connectionString)
-        {
-            string queryString =
-                "SELECT id, Nome, Sobrenome, Email, Senha  FROM dbo.registro;";
-            using (SqlConnection connection = new SqlConnection(
-                       connectionString))
-            {
-                SqlCommand command = new SqlCommand(
-                    queryString, connection);
-                connection.Open();
-                using (SqlDataReader reader = command.ExecuteReader())
-                {
-                    while (reader.Read())
-                    {
-                        Console.WriteLine(String.Format("{0}, {1}",
-                            reader[0], reader[1]));
-                    }
-                }
-            } 
         context.Add(Email);
         context.SaveChanges;
         ReadOrderData("Data Source=(local);"
@@ -105,29 +86,6 @@ public class WeatherForecastController : ControllerBase
         
     }
         
-    {  
+    
 
-    private static readonly string[] Summaries = new[]
-    {
-        "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-    };
-
-    private readonly ILogger<WeatherForecastController> _logger;
-
-    public WeatherForecastController(ILogger<WeatherForecastController> logger)
-    {
-        _logger = logger;
-    }
-
-    [HttpGet(Name = "GetWeatherForecast")]
-    public IEnumerable<WeatherForecast> Get()
-    {
-        return Enumerable.Range(1, 5).Select(index => new WeatherForecast
-        {
-            Date = DateTime.Now.AddDays(index),
-            TemperatureC = Random.Shared.Next(-20, 55),
-            Summary = Summaries[Random.Shared.Next(Summaries.Length)]
-        })
-        .ToArray();
-    }
 }
