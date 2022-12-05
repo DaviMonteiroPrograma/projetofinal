@@ -45,7 +45,15 @@ value(1, 'Intel Core I5 3200Ghz', 'Processador'),
 (17, 'Armazenamento 500 Gb HDD', 'Memória de Armazenamento'),
 (18, 'Armazenamento 1 Tb(1000Gb) HDD', 'Memória de Armazenamento'),
 (19, 'Armazenamento 250 Gb SSD', 'Memória de Armazenamento'),
-(20, '', ''),
+(20, 'Monitor Aoc 21.5 Led 75Hz Full HD', 'Monitor'),
+(21, 'Monitor Gamer 144Hz 1ms ', 'Monitor'),
+(22, 'Monitor Gamer Curvo Samsung Odyssey 49 DQHD 240Hz 1ms', 'Monitor'),
+(23, 'Fonte 400w', 'Fonte'),
+(24, 'Fonte 600w', 'Fonte'),
+(25, 'Fonte 900w', 'Fonte'),
+(26, 'Cooler 4 Pas', 'Cooler'),
+(27, 'Cooler 5 Pas', 'Cooler'),
+(28, 'Cooler 6 pas', 'Cooler');
 
 
 
