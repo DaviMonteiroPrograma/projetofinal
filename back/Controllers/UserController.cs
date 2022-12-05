@@ -60,6 +60,16 @@ public class UserController : ControllerBase
 
         return ok();
     }
+      [HttpPost("Peca")]
+    public Task<IActionResult>Peca(
+        [FromBody] Peca peca
+    )
+    {
+        using TCCSenai context = new TCCSenai ();
+
+        
+    }
+
 
       [HttpPost("update")]
     public IActionResult UpdateName()
