@@ -16,7 +16,7 @@
     <a href="#"><li>Cooler</li></a>
     <BSButton Color="BSColor.Primary" Target="modalCooler">Opções</BSButton>
     <a href="#"><li>Water Cooler</li></a>
-    <button>opções</button>
+    <BSButton Color="BSColor.Primary" Target="modalW_Cooler">Opções</BSButton>
     <a href="#"><li>Fonte</li></a>
     <BSButton Color="BSColor.Primary" Target="modalFonte">Opções</BSButton>
     <a href="#"><li>Placa de Vídeo</li></a>
@@ -31,7 +31,7 @@
     <a href="#"><li>Led's</li></a>
     <button>opções</button>
     <a href="#"><li>Teclados</li></a>
-    <button>opções</button>
+    <BSButton Color="BSColor.Primary" Target="modalTeclado">Opções</BSButton>
     <a href="#"><li>Mause</li></a>
     <button>opções</button>
     
@@ -175,6 +175,42 @@
       <BSInput InputType="InputType.Select" Value="0" InputSize="Size.Large" MarginBottom="Margins.Medium">
         @foreach (var nome in from p in listaProdutos 
                               where p.Tipo == 8
+                              select p.Nome)
+        {
+          <option>@nome</option>
+        }
+      </BSInput>
+    </Content>
+    <Footer Context="modal">
+        <BSButton MarginStart="Margins.Auto" Color="BSColor.Secondary" @onclick="modal.HideAsync">Close</BSButton>
+        <BSButton Color="BSColor.Primary">Save changes</BSButton>
+    </Footer>
+</BSModal>
+
+<BSModal DataId="modalW_Cooler">
+    <Header>Modal Title</Header>
+    <Content>
+      <BSInput InputType="InputType.Select" Value="0" InputSize="Size.Large" MarginBottom="Margins.Medium">
+        @foreach (var nome in from p in listaProdutos 
+                              where p.Tipo == 9
+                              select p.Nome)
+        {
+          <option>@nome</option>
+        }
+      </BSInput>
+    </Content>
+    <Footer Context="modal">
+        <BSButton MarginStart="Margins.Auto" Color="BSColor.Secondary" @onclick="modal.HideAsync">Close</BSButton>
+        <BSButton Color="BSColor.Primary">Save changes</BSButton>
+    </Footer>
+</BSModal>
+
+<BSModal DataId="modalTeclado">
+    <Header>Modal Title</Header>
+    <Content>
+      <BSInput InputType="InputType.Select" Value="0" InputSize="Size.Large" MarginBottom="Margins.Medium">
+        @foreach (var nome in from p in listaProdutos 
+                              where p.Tipo == 10
                               select p.Nome)
         {
           <option>@nome</option>
@@ -347,5 +383,37 @@
     Cooler3.Tipo = 8;
     Cooler3.Nome = "Cooler 6 pas";
     listaProdutos.Add(Cooler3);
+  //########################################################################################
+
+    Peca WaterCooler = new Peca();
+    WaterCooler.Tipo = 9;
+    WaterCooler.Nome = "Water Cooler DeepCool Gammaxx LE500, 240mm, Preto, R-LE500-BKLNMG-G-1";
+    listaProdutos.Add(WaterCooler);
+
+    Peca WaterCooler2 = new Peca();
+    WaterCooler2.Tipo = 9;
+    WaterCooler2.Nome = "Water Cooler Corsair ICUE H150I Elite Capellix, RGB, 360mm, CW-9060051-WW";
+    listaProdutos.Add(WaterCooler2);
+
+    Peca WaterCooler3 = new Peca();
+    WaterCooler3.Tipo = 9;
+    WaterCooler3.Nome = "Water Cooler Corsair ICUE H170I Elite Capellix, RGB, 420mm, CW-9060055-WW";
+    listaProdutos.Add(WaterCooler3);    
+    //########################################################################################
+
+    Peca Teclado = new Peca();
+    Teclado.Tipo = 10;
+    Teclado.Nome = "Teclado Mecânico Gamer T-Dagger Bora Rgb Switch Red TGK315";
+    listaProdutos.Add(Teclado);
+
+    Peca Teclado2 = new Peca();
+    Teclado2.Tipo = 10;
+    Teclado2.Nome = "Teclado Mecânico Gamer Redragon Magic Wand Pro Switch Brown";
+    listaProdutos.Add(Teclado2);
+
+    Peca Teclado3 = new Peca();
+    Teclado3.Tipo = 10;
+    Teclado3.Nome = "Water Cooler Corsair ICUE H170I Elite Capellix, RGB, 420mm, CW-9060055-WW";
+    listaProdutos.Add(Teclado3);
   }
 }
