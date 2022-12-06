@@ -14,16 +14,16 @@
     <a href="#"><li>Memória Ram(DDR's)</li></a>
     <BSButton Color="BSColor.Primary" Target="modalMemoria_Ram">Opções</BSButton>
     <a href="#"><li>Cooler</li></a>
-    <button>opções</button>
+    <BSButton Color="BSColor.Primary" Target="modalCooler">Opções</BSButton>
     <a href="#"><li>Water Cooler</li></a>
     <button>opções</button>
     <a href="#"><li>Fonte</li></a>
-    <button>opções</button>
+    <BSButton Color="BSColor.Primary" Target="modalFonte">Opções</BSButton>
     <a href="#"><li>Placa de Vídeo</li></a>
-    <button>opções</button>
+    <BSButton Color="BSColor.Primary" Target="modalPlaca_Video">Opções</BSButton>
     <a href="#"><li>---------------------------------</li></a>
     <a href="#"><li>Monitores</li></a>
-    <button>opções</button>
+    <BSButton Color="BSColor.Primary" Target="modalMonitor">Opções</BSButton>
     <a href="#"><li>Gabinetes</li></a>
     <button>opções</button>
     <a href="#"><li>Cooler's</li></a>
@@ -115,6 +115,78 @@
     </Footer>
 </BSModal>
 
+<BSModal DataId="modalMonitor">
+    <Header>Modal Title</Header>
+    <Content>
+      <BSInput InputType="InputType.Select" Value="0" InputSize="Size.Large" MarginBottom="Margins.Medium">
+        @foreach (var nome in from p in listaProdutos 
+                              where p.Tipo == 6
+                              select p.Nome)
+        {
+          <option>@nome</option>
+        }
+      </BSInput>
+    </Content>
+    <Footer Context="modal">
+        <BSButton MarginStart="Margins.Auto" Color="BSColor.Secondary" @onclick="modal.HideAsync">Close</BSButton>
+        <BSButton Color="BSColor.Primary">Save changes</BSButton>
+    </Footer>
+</BSModal>
+
+<BSModal DataId="modalFonte">
+    <Header>Modal Title</Header>
+    <Content>
+      <BSInput InputType="InputType.Select" Value="0" InputSize="Size.Large" MarginBottom="Margins.Medium">
+        @foreach (var nome in from p in listaProdutos 
+                              where p.Tipo == 5
+                              select p.Nome)
+        {
+          <option>@nome</option>
+        }
+      </BSInput>
+    </Content>
+    <Footer Context="modal">
+        <BSButton MarginStart="Margins.Auto" Color="BSColor.Secondary" @onclick="modal.HideAsync">Close</BSButton>
+        <BSButton Color="BSColor.Primary">Save changes</BSButton>
+    </Footer>
+</BSModal>
+
+<BSModal DataId="modalPlaca_Video">
+    <Header>Modal Title</Header>
+    <Content>
+      <BSInput InputType="InputType.Select" Value="0" InputSize="Size.Large" MarginBottom="Margins.Medium">
+        @foreach (var nome in from p in listaProdutos 
+                              where p.Tipo == 7
+                              select p.Nome)
+        {
+          <option>@nome</option>
+        }
+      </BSInput>
+    </Content>
+    <Footer Context="modal">
+        <BSButton MarginStart="Margins.Auto" Color="BSColor.Secondary" @onclick="modal.HideAsync">Close</BSButton>
+        <BSButton Color="BSColor.Primary">Save changes</BSButton>
+    </Footer>
+</BSModal>
+
+<BSModal DataId="modalCooler">
+    <Header>Modal Title</Header>
+    <Content>
+      <BSInput InputType="InputType.Select" Value="0" InputSize="Size.Large" MarginBottom="Margins.Medium">
+        @foreach (var nome in from p in listaProdutos 
+                              where p.Tipo == 8
+                              select p.Nome)
+        {
+          <option>@nome</option>
+        }
+      </BSInput>
+    </Content>
+    <Footer Context="modal">
+        <BSButton MarginStart="Margins.Auto" Color="BSColor.Secondary" @onclick="modal.HideAsync">Close</BSButton>
+        <BSButton Color="BSColor.Primary">Save changes</BSButton>
+    </Footer>
+</BSModal>
+
 @code
 {
   List<Peca> listaProdutos = new List<Peca>();
@@ -132,32 +204,148 @@
     placaMae2.Tipo = 1;
     placaMae2.Nome = "Placa Mãe GA-A520M";
     listaProdutos.Add(placaMae2);
-    
+
+    Peca placaMae3 = new Peca();
+    placaMae3.Tipo = 1;
+    placaMae3.Nome = "placa-mãe Asus Prime H410M-E";
+    listaProdutos.Add(placaMae3);
+
+  //########################################################################################
+
     Peca processador = new Peca();
     processador.Tipo = 2;
-    processador.Nome = "Intel Core I7 3770Ghz";
+    processador.Nome = "Intel Core I5 3200Ghz";
     listaProdutos.Add(processador);
+
+    Peca processador2 = new Peca();
+    processador2.Tipo = 2;
+    processador2.Nome = "Intel Core I5 7400Ghz";
+    listaProdutos.Add(processador2);
+
+    Peca processador3 = new Peca();
+    processador3.Tipo = 2;
+    processador3.Nome = "Intel Core I7 3770Ghz";
+    listaProdutos.Add(processador3);
+
+    Peca processador4 = new Peca();
+    processador4.Tipo = 2;
+    processador4.Nome = "Intel Core I7 7700Kk";
+    listaProdutos.Add(processador4);
+
+    Peca processador5 = new Peca();
+    processador5.Tipo = 2;
+    processador5.Nome = "Intel Core I9 9900Kk";
+    listaProdutos.Add(processador5);
+
+    Peca processador6 = new Peca();
+    processador6.Tipo = 2;
+    processador6.Nome = "Intel Core I9 12900Kk";
+    listaProdutos.Add(processador6);
+
+  //########################################################################################
 
     Peca M_Ram = new Peca();
     M_Ram.Tipo = 3;
-    M_Ram.Nome = "Pente de Ram 16Gb Ddr-6";
+    M_Ram.Nome = "Pente de Ram 4Gb Ddr-4";
     listaProdutos.Add(M_Ram);
+
+    Peca M_Ram2 = new Peca();
+    M_Ram2.Tipo = 3;
+    M_Ram2.Nome = "Pente de Ram 8Gb Ddr-5";
+    listaProdutos.Add(M_Ram2);
+
+    Peca M_Ram3 = new Peca();
+    M_Ram3.Tipo = 3;
+    M_Ram3.Nome = "Pente de Ram 16Gb Ddr-6";
+    listaProdutos.Add(M_Ram3);
+
+  //########################################################################################
 
     Peca Armazenamento = new Peca();
     Armazenamento.Tipo = 4;
-    Armazenamento.Nome = "250 SSD";
+    Armazenamento.Nome = "Armazenamento 500 Gb HDD";
     listaProdutos.Add(Armazenamento);
+
+    Peca Armazenamento2 = new Peca();
+    Armazenamento2.Tipo = 4;
+    Armazenamento2.Nome = "Armazenamento 1 Tb(1000Gb) HDD";
+    listaProdutos.Add(Armazenamento2);
+
+    Peca Armazenamento3 = new Peca();
+    Armazenamento3.Tipo = 4;
+    Armazenamento3.Nome = "Armazenamento 250 Gb SSD";
+    listaProdutos.Add(Armazenamento3);
+
+  //########################################################################################
 
     Peca Fonte = new Peca();
     Fonte.Tipo = 5;
-    Fonte.Nome = "700W";
+    Fonte.Nome = "400W";
     listaProdutos.Add(Fonte);
+    
+    Peca Fonte2 = new Peca();
+    Fonte2.Tipo = 5;
+    Fonte2.Nome = "600W";
+    listaProdutos.Add(Fonte2);
+
+    Peca Fonte3 = new Peca();
+    Fonte3.Tipo = 5;
+    Fonte3.Nome = "900W";
+    listaProdutos.Add(Fonte3);
+
+  //########################################################################################
 
     Peca Monitor = new Peca();
     Monitor.Tipo = 6;
-    Monitor.Nome = "Monitor Gamer 144Hz 1ms";
+    Monitor.Nome = "Monitor Aoc 21.5 Led 75Hz Full HD";
     listaProdutos.Add(Monitor);
+
+    Peca Monitor2 = new Peca();
+    Monitor2.Tipo = 6;
+    Monitor2.Nome = "Monitor Gamer 144Hz 1ms";
+    listaProdutos.Add(Monitor2);
+
+    Peca Monitor3 = new Peca();
+    Monitor3.Tipo = 6;
+    Monitor3.Nome = "Monitor Gamer Curvo Samsung Odyssey 49 DQHD 240Hz 1ms";
+    listaProdutos.Add(Monitor3);
+  //########################################################################################
+
+    Peca PlacadeVideo = new Peca();
+    PlacadeVideo.Tipo = 7;
+    PlacadeVideo.Nome = "GTX 1060 Ti";
+    listaProdutos.Add(PlacadeVideo);
+
+    Peca PlacadeVideo2 = new Peca();
+    PlacadeVideo2.Tipo = 7;
+    PlacadeVideo2.Nome = "RTX 2060 Ti";
+    listaProdutos.Add(PlacadeVideo2);
+
+    Peca PlacadeVideo3 = new Peca();
+    PlacadeVideo3.Tipo = 7;
+    PlacadeVideo3.Nome = "RTX 3080 Ti";
+    listaProdutos.Add(PlacadeVideo3);
+
+    Peca PlacadeVideo4 = new Peca();
+    PlacadeVideo4.Tipo = 7;
+    PlacadeVideo4.Nome = "RTX 4090 Ti";
+    listaProdutos.Add(PlacadeVideo4);
+
+  //########################################################################################
+
+    Peca Cooler = new Peca();
+    Cooler.Tipo = 8;
+    Cooler.Nome = "Cooler 4 pas";
+    listaProdutos.Add(Cooler);
+
+    Peca Cooler2 = new Peca();
+    Cooler2.Tipo = 8;
+    Cooler2.Nome = "Cooler 5 pas";
+    listaProdutos.Add(Cooler2);
+
+    Peca Cooler3 = new Peca();
+    Cooler3.Tipo = 8;
+    Cooler3.Nome = "Cooler 6 pas";
+    listaProdutos.Add(Cooler3);
   }
-
-
 }
