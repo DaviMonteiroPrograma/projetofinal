@@ -6,4 +6,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="BlazorStrap" Version="5.0.106" />
+  </ItemGroup>
+
 </Project>

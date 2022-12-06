@@ -61,7 +61,7 @@ public class UserController : ControllerBase
         return ok();
     }
       [HttpPost("Peca")]
-    public Task<IActionResult>Peca(
+    public Task<IActionResult> Peca(
         [FromBody] Peca peca
     )
     {

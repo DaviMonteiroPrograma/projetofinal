@@ -1,3 +1,5 @@
+@import '_content/BlazorStrap/BlazorStrap.bundle.scp.css';
+
 /* _content/front/Pages/Ajuda.razor.rz.scp.css */
 body[b-zgg37buu0u]{
 	background-image: url(https://wallpaperaccess.com/full/7270381.gif);
@@ -250,7 +252,7 @@ li[b-xvo6mib1ny] {
       text-decoration: none;
       color: #fff;
   }
-  button[b-xvo6mib1ny]{
+button[b-xvo6mib1ny]{
   color:#fff;
   background-color:#4B0082;
   outline: none;

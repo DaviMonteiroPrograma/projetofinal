@@ -2,46 +2,162 @@
 
 <PageTitle>Inicio</PageTitle>
 
-<body>
-  <h1 class="pl">Peças pra montagem/<b><a href="https://localhost:7267/Ajuda">O que são cada uma</a></b></h1>
-  <nav class="nav">
-    <ul>
-      <a href="#"><li>Placa mãe</li></a>
-      <button>opções</button>
-      <a href="#"><li>Processador</li></a>
-      <button>opções</button>
-      <a href="#"><li>Memória (SSD ou HDD)</li></a>
-      <button>opções</button>
-      <a href="#"><li>Memória Ram(DDR's)</li></a>
-      <button>opções</button>
-      <a href="#"><li>Cooler</li></a>
-      <button>opções</button>
-      <a href="#"><li>Water Cooler</li></a>
-      <button>opções</button>
-      <a href="#"><li>Fonte</li></a>
-      <button>opções</button>
-      <a href="#"><li>Placa de Vídeo</li></a>
-      <button>opções</button>
-      <a href="#"><li>---------------------------------</li></a>
-      <a href="#"><li>Monitores</li></a>
-      <button>opções</button>
-      <a href="#"><li>Gabinetes</li></a>
-      <button>opções</button>
-      <a href="#"><li>Cooler's</li></a>
-      <button>opções</button>
-      <a href="#"><li>Led's</li></a>
-      <button>opções</button>
-      <a href="#"><li>Teclados</li></a>
-      <button>opções</button>
-      <a href="#"><li>Mause</li></a>
-      <button>opções</button>
-      
-    </ul>
-  </nav>
+<h1 class="pl">Peças pra montagem/<b><a href="https://localhost:7267/Ajuda">O que são cada uma</a></b></h1>
+<nav class="nav">
+  <ul>
+    <a href="#"><li>Placa mãe</li></a>
+    <BSButton Color="BSColor.Primary" Target="modalPlacaMae">Opções</BSButton>
+    <a href="#"><li>Processador</li></a>
+    <BSButton Color="BSColor.Primary" Target="modalProcessador">Opções</BSButton>
+    <a href="#"><li>Memória (SSD ou HDD)</li></a>
+    <BSButton Color="BSColor.Primary" Target="modalArmazenamento">Opções</BSButton>
+    <a href="#"><li>Memória Ram(DDR's)</li></a>
+    <BSButton Color="BSColor.Primary" Target="modalMemoria_Ram">Opções</BSButton>
+    <a href="#"><li>Cooler</li></a>
+    <button>opções</button>
+    <a href="#"><li>Water Cooler</li></a>
+    <button>opções</button>
+    <a href="#"><li>Fonte</li></a>
+    <button>opções</button>
+    <a href="#"><li>Placa de Vídeo</li></a>
+    <button>opções</button>
+    <a href="#"><li>---------------------------------</li></a>
+    <a href="#"><li>Monitores</li></a>
+    <button>opções</button>
+    <a href="#"><li>Gabinetes</li></a>
+    <button>opções</button>
+    <a href="#"><li>Cooler's</li></a>
+    <button>opções</button>
+    <a href="#"><li>Led's</li></a>
+    <button>opções</button>
+    <a href="#"><li>Teclados</li></a>
+    <button>opções</button>
+    <a href="#"><li>Mause</li></a>
+    <button>opções</button>
+    
+  </ul>
+</nav>
 
-     <ul class="NF">
-      <a href="#"><li>Nível de Força:</li></a>
-      <a href="#"><li>Preço Total:</li></a>
-    </ul>
-  <!-- https://github.com/trevisharp/TDSabado  -->
-</body>
+<ul class="NF">
+  <a href="#"><li>Nível de Força:</li></a>
+  <a href="#"><li>Preço Total:</li></a>
+</ul>
+
+<BSModal DataId="modalPlacaMae">
+    <Header>Modal Title</Header>
+    <Content>
+      <BSInput InputType="InputType.Select" Value="0" InputSize="Size.Large" MarginBottom="Margins.Medium">
+        @foreach (var nome in from p in listaProdutos 
+                              where p.Tipo == 1
+                              select p.Nome)
+        {
+          <option>@nome</option>
+        }
+      </BSInput>
+    </Content>
+    <Footer Context="modal">
+        <BSButton MarginStart="Margins.Auto" Color="BSColor.Secondary" @onclick="modal.HideAsync">Close</BSButton>
+        <BSButton Color="BSColor.Primary">Save changes</BSButton>
+    </Footer>
+</BSModal>
+
+<BSModal DataId="modalProcessador">
+    <Header>Modal Title</Header>
+    <Content>
+      <BSInput InputType="InputType.Select" Value="0" InputSize="Size.Large" MarginBottom="Margins.Medium">
+        @foreach (var nome in from p in listaProdutos 
+                              where p.Tipo == 2
+                              select p.Nome)
+        {
+          <option>@nome</option>
+        }
+      </BSInput>
+    </Content>
+    <Footer Context="modal">
+        <BSButton MarginStart="Margins.Auto" Color="BSColor.Secondary" @onclick="modal.HideAsync">Close</BSButton>
+        <BSButton Color="BSColor.Primary">Save changes</BSButton>
+    </Footer>
+</BSModal>
+
+<BSModal DataId="modalArmazenamento">
+    <Header>Modal Title</Header>
+    <Content>
+      <BSInput InputType="InputType.Select" Value="0" InputSize="Size.Large" MarginBottom="Margins.Medium">
+        @foreach (var nome in from p in listaProdutos 
+                              where p.Tipo == 4
+                              select p.Nome)
+        {
+          <option>@nome</option>
+        }
+      </BSInput>
+    </Content>
+    <Footer Context="modal">
+        <BSButton MarginStart="Margins.Auto" Color="BSColor.Secondary" @onclick="modal.HideAsync">Close</BSButton>
+        <BSButton Color="BSColor.Primary">Save changes</BSButton>
+    </Footer>
+</BSModal>
+
+<BSModal DataId="modalMemoria_Ram">
+    <Header>Modal Title</Header>
+    <Content>
+      <BSInput InputType="InputType.Select" Value="0" InputSize="Size.Large" MarginBottom="Margins.Medium">
+        @foreach (var nome in from p in listaProdutos 
+                              where p.Tipo == 3
+                              select p.Nome)
+        {
+          <option>@nome</option>
+        }
+      </BSInput>
+    </Content>
+    <Footer Context="modal">
+        <BSButton MarginStart="Margins.Auto" Color="BSColor.Secondary" @onclick="modal.HideAsync">Close</BSButton>
+        <BSButton Color="BSColor.Primary">Save changes</BSButton>
+    </Footer>
+</BSModal>
+
+@code
+{
+  List<Peca> listaProdutos = new List<Peca>();
+
+  protected override async Task OnAfterRenderAsync(bool firstRender)
+  {
+    if (!firstRender)
+      return;
+    Peca placaMae = new Peca();
+    placaMae.Tipo = 1;
+    placaMae.Nome = "Placa Mãe Gigabyte B550M AORUS ELITE";
+    listaProdutos.Add(placaMae);
+
+    Peca placaMae2 = new Peca();
+    placaMae2.Tipo = 1;
+    placaMae2.Nome = "Placa Mãe GA-A520M";
+    listaProdutos.Add(placaMae2);
+    
+    Peca processador = new Peca();
+    processador.Tipo = 2;
+    processador.Nome = "Intel Core I7 3770Ghz";
+    listaProdutos.Add(processador);
+
+    Peca M_Ram = new Peca();
+    M_Ram.Tipo = 3;
+    M_Ram.Nome = "Pente de Ram 16Gb Ddr-6";
+    listaProdutos.Add(M_Ram);
+
+    Peca Armazenamento = new Peca();
+    Armazenamento.Tipo = 4;
+    Armazenamento.Nome = "250 SSD";
+    listaProdutos.Add(Armazenamento);
+
+    Peca Fonte = new Peca();
+    Fonte.Tipo = 5;
+    Fonte.Nome = "700W";
+    listaProdutos.Add(Fonte);
+
+    Peca Monitor = new Peca();
+    Monitor.Tipo = 6;
+    Monitor.Nome = "Monitor Gamer 144Hz 1ms";
+    listaProdutos.Add(Monitor);
+  }
+
+
+}

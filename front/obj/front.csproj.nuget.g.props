@@ -13,4 +13,7 @@
     <SourceRoot Include="C:\Users\Aluno\.nuget\packages\" />
     <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
   </ItemGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)blazorstrap\5.0.106\buildTransitive\BlazorStrap.props" Condition="Exists('$(NuGetPackageRoot)blazorstrap\5.0.106\buildTransitive\BlazorStrap.props')" />
+  </ImportGroup>
 </Project>
