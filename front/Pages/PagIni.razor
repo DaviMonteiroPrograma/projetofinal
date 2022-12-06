@@ -25,7 +25,7 @@
     <a href="#"><li>Monitores</li></a>
     <BSButton Color="BSColor.Primary" Target="modalMonitor">Opções</BSButton>
     <a href="#"><li>Gabinetes</li></a>
-    <button>opções</button>
+    <BSButton Color="BSColor.Primary" Target="modalGabinete">Opções</BSButton>
     <a href="#"><li>Cooler's</li></a>
     <button>opções</button>
     <a href="#"><li>Led's</li></a>
@@ -211,6 +211,24 @@
       <BSInput InputType="InputType.Select" Value="0" InputSize="Size.Large" MarginBottom="Margins.Medium">
         @foreach (var nome in from p in listaProdutos 
                               where p.Tipo == 10
+                              select p.Nome)
+        {
+          <option>@nome</option>
+        }
+      </BSInput>
+    </Content>
+    <Footer Context="modal">
+        <BSButton MarginStart="Margins.Auto" Color="BSColor.Secondary" @onclick="modal.HideAsync">Close</BSButton>
+        <BSButton Color="BSColor.Primary">Save changes</BSButton>
+    </Footer>
+</BSModal>
+
+<BSModal DataId="modalGabinete">
+    <Header>Modal Title</Header>
+    <Content>
+      <BSInput InputType="InputType.Select" Value="0" InputSize="Size.Large" MarginBottom="Margins.Medium">
+        @foreach (var nome in from p in listaProdutos 
+                              where p.Tipo == 11
                               select p.Nome)
         {
           <option>@nome</option>
@@ -415,5 +433,21 @@
     Teclado3.Tipo = 10;
     Teclado3.Nome = "Water Cooler Corsair ICUE H170I Elite Capellix, RGB, 420mm, CW-9060055-WW";
     listaProdutos.Add(Teclado3);
+    //########################################################################################
+
+    Peca Gabinete = new Peca();
+    Gabinete.Tipo = 12;
+    Gabinete.Nome = "Gabinete Gamer Redragon Grapple Branco GC-607WH";
+    listaProdutos.Add(Gabinete);
+
+    Peca Gabinete2 = new Peca();
+    Gabinete2.Tipo = 12;
+    Gabinete2.Nome = "Gabinete Gamer Pichau HX300 Glass Preto, PG-HX3-G01 - Preto";
+    listaProdutos.Add(Gabinete2);
+
+    Peca Gabinete3 = new Peca();
+    Gabinete3.Tipo = 12;
+    Gabinete3.Nome = "Gabinete Gamer Top Tag F922RD";
+    listaProdutos.Add(Gabinete3);
   }
 }
