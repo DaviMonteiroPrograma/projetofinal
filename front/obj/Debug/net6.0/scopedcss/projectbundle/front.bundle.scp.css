@@ -190,6 +190,7 @@ body[b-xqazf780xr]{
 	font-size:12px;
 	
 }
+/*SpriteBW*/
 /* _content/front/Pages/PagIni.razor.rz.scp.css */
 body[b-xvo6mib1ny]{
 	background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/223e6792880429.5e569ff84ebef.gif);
@@ -221,7 +222,7 @@ body[b-xvo6mib1ny]{
 
   .nav[b-xvo6mib1ny]{
     width: 200px;
-    height: 800px;
+    height: 911px;
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.89);
     color: #fff;

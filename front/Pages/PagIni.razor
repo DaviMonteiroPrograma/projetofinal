@@ -27,13 +27,14 @@
     <a href="#"><li>Gabinetes</li></a>
     <BSButton Color="BSColor.Primary" Target="modalGabinete">Opções</BSButton>
     <a href="#"><li>Cooler's</li></a>
-    <button>opções</button>
+    <BSButton Color="BSColor.Primary" Target="modalCoolerRGB">Opções</BSButton>
     <a href="#"><li>Led's</li></a>
-    <button>opções</button>
+    <BSButton Color="BSColor.Primary" Target="modalLeds">Opções</BSButton>
     <a href="#"><li>Teclados</li></a>
     <BSButton Color="BSColor.Primary" Target="modalTeclado">Opções</BSButton>
     <a href="#"><li>Mause</li></a>
-    <button>opções</button>
+    <BSButton Color="BSColor.Primary" Target="modalMouse">Opções</BSButton>
+    
     
   </ul>
 </nav>
@@ -241,6 +242,78 @@
     </Footer>
 </BSModal>
 
+<BSModal DataId="modalCoolerRGB">
+    <Header>Modal Title</Header>
+    <Content>
+      <BSInput InputType="InputType.Select" Value="0" InputSize="Size.Large" MarginBottom="Margins.Medium">
+        @foreach (var nome in from p in listaProdutos 
+                              where p.Tipo == 13
+                              select p.Nome)
+        {
+          <option>@nome</option>
+        }
+      </BSInput>
+    </Content>
+    <Footer Context="modal">
+        <BSButton MarginStart="Margins.Auto" Color="BSColor.Secondary" @onclick="modal.HideAsync">Close</BSButton>
+        <BSButton Color="BSColor.Primary">Save changes</BSButton>
+    </Footer>
+</BSModal>
+
+<BSModal DataId="modalLeds">
+    <Header>Modal Title</Header>
+    <Content>
+      <BSInput InputType="InputType.Select" Value="0" InputSize="Size.Large" MarginBottom="Margins.Medium">
+        @foreach (var nome in from p in listaProdutos 
+                              where p.Tipo == 14
+                              select p.Nome)
+        {
+          <option>@nome</option>
+        }
+      </BSInput>
+    </Content>
+    <Footer Context="modal">
+        <BSButton MarginStart="Margins.Auto" Color="BSColor.Secondary" @onclick="modal.HideAsync">Close</BSButton>
+        <BSButton Color="BSColor.Primary">Save changes</BSButton>
+    </Footer>
+</BSModal>
+
+<BSModal DataId="modalGabinete">
+    <Header>Modal Title</Header>
+    <Content>
+      <BSInput InputType="InputType.Select" Value="0" InputSize="Size.Large" MarginBottom="Margins.Medium">
+        @foreach (var nome in from p in listaProdutos 
+                              where p.Tipo == 12
+                              select p.Nome)
+        {
+          <option>@nome</option>
+        }
+      </BSInput>
+    </Content>
+    <Footer Context="modal">
+        <BSButton MarginStart="Margins.Auto" Color="BSColor.Secondary" @onclick="modal.HideAsync">Close</BSButton>
+        <BSButton Color="BSColor.Primary">Save changes</BSButton>
+    </Footer>
+</BSModal>
+
+<BSModal DataId="modalMouse">
+    <Header>Modal Title</Header>
+    <Content>
+      <BSInput InputType="InputType.Select" Value="0" InputSize="Size.Large" MarginBottom="Margins.Medium">
+        @foreach (var nome in from p in listaProdutos 
+                              where p.Tipo == 15
+                              select p.Nome)
+        {
+          <option>@nome</option>
+        }
+      </BSInput>
+    </Content>
+    <Footer Context="modal">
+        <BSButton MarginStart="Margins.Auto" Color="BSColor.Secondary" @onclick="modal.HideAsync">Close</BSButton>
+        <BSButton Color="BSColor.Primary">Save changes</BSButton>
+    </Footer>
+</BSModal>
+
 @code
 {
   List<Peca> listaProdutos = new List<Peca>();
@@ -263,6 +336,26 @@
     placaMae3.Tipo = 1;
     placaMae3.Nome = "placa-mãe Asus Prime H410M-E";
     listaProdutos.Add(placaMae3);
+
+    Peca placaMae4 = new Peca();
+    placaMae4.Tipo = 1;
+    placaMae4.Nome = "Placa Mãe X99 Ddr4 Lga2011 Xeon V3 V4 Nvme - Pronta";
+    listaProdutos.Add(placaMae4);
+
+    Peca placaMae5 = new Peca();
+    placaMae5.Tipo = 1;
+    placaMae5.Nome = "Placa Mãe Asrock B450M Steel Legend AM4 Amd Ddr4";
+    listaProdutos.Add(placaMae5);
+
+    Peca placaMae6 = new Peca();
+    placaMae6.Tipo = 1;
+    placaMae6.Nome = "Placa Mãe Lga 1200 H510M H Ddr4 - Gigabyte";
+    listaProdutos.Add(placaMae6);
+
+    Peca placaMae7 = new Peca();
+    placaMae7.Tipo = 1;
+    placaMae7.Nome = "placa-mãe Asus Prime H410M-E Intel Lga 1200 Ddr4";
+    listaProdutos.Add(placaMae7);
 
   //########################################################################################
 
@@ -296,50 +389,126 @@
     processador6.Nome = "Intel Core I9 12900Kk";
     listaProdutos.Add(processador6);
 
+    Peca processador7 = new Peca();
+    processador7.Tipo = 2;
+    processador7.Nome = "xeon e5 2670 v3";
+    listaProdutos.Add(processador7);
+
+
   //########################################################################################
 
     Peca M_Ram = new Peca();
     M_Ram.Tipo = 3;
-    M_Ram.Nome = "Pente de Ram 4Gb Ddr-4";
+    M_Ram.Nome = "Pente de Ram 2Gb Ddr-3";
     listaProdutos.Add(M_Ram);
 
     Peca M_Ram2 = new Peca();
     M_Ram2.Tipo = 3;
-    M_Ram2.Nome = "Pente de Ram 8Gb Ddr-5";
+    M_Ram2.Nome = "Pente de Ram 4Gb Ddr-4";
     listaProdutos.Add(M_Ram2);
 
     Peca M_Ram3 = new Peca();
-    M_Ram3.Tipo = 3;
-    M_Ram3.Nome = "Pente de Ram 16Gb Ddr-6";
+    M_Ram.Tipo = 3;
+    M_Ram3.Nome = "Pente de Ram 4Gb Ddr-5";
     listaProdutos.Add(M_Ram3);
+
+    Peca M_Ram4 = new Peca();
+    M_Ram4.Tipo = 3;
+    M_Ram4.Nome = "Pente de Ram 6Gb Ddr-4";
+    listaProdutos.Add(M_Ram4);
+
+    Peca M_Ram5 = new Peca();
+    M_Ram5.Tipo = 3;
+    M_Ram5.Nome = "Pente de Ram 6Gb Ddr-5";
+    listaProdutos.Add(M_Ram5);
+
+    Peca M_Ram6 = new Peca();
+    M_Ram6.Tipo = 3;
+    M_Ram6.Nome = "Pente de Ram 8Gb Ddr-4";
+    listaProdutos.Add(M_Ram6);
+
+    Peca M_Ram7 = new Peca();
+    M_Ram7.Tipo = 3;
+    M_Ram7.Nome = "Pente de Ram 8Gb Ddr-5";
+    listaProdutos.Add(M_Ram7);
+
+    Peca M_Ram8 = new Peca();
+    M_Ram8.Tipo = 3;
+    M_Ram8.Nome = "Pente de Ram 16Gb Ddr-5";
+    listaProdutos.Add(M_Ram8);
+
+    Peca M_Ram9 = new Peca();
+    M_Ram9.Tipo = 3;
+    M_Ram9.Nome = "Pente de Ram 16Gb Ddr-6";
+    listaProdutos.Add(M_Ram9);
+
+    Peca M_Ram10 = new Peca();
+    M_Ram10.Tipo = 3;
+    M_Ram10.Nome = "Pente de Ram 32Gb Ddr-6";
+    listaProdutos.Add(M_Ram10);
 
   //########################################################################################
 
     Peca Armazenamento = new Peca();
     Armazenamento.Tipo = 4;
-    Armazenamento.Nome = "Armazenamento 500 Gb HDD";
+    Armazenamento.Nome = "Armazenamento 250 Gb HDD";
     listaProdutos.Add(Armazenamento);
 
     Peca Armazenamento2 = new Peca();
     Armazenamento2.Tipo = 4;
-    Armazenamento2.Nome = "Armazenamento 1 Tb(1000Gb) HDD";
+    Armazenamento2.Nome = "Armazenamento 500 Gb HDD";
     listaProdutos.Add(Armazenamento2);
 
     Peca Armazenamento3 = new Peca();
     Armazenamento3.Tipo = 4;
-    Armazenamento3.Nome = "Armazenamento 250 Gb SSD";
+    Armazenamento3.Nome = "Armazenamento 1 Tb(1000Gb) HDD";
     listaProdutos.Add(Armazenamento3);
+
+    Peca Armazenamento4 = new Peca();
+    Armazenamento4.Tipo = 4;
+    Armazenamento4.Nome = "Armazenamento 250 Gb SSD";
+    listaProdutos.Add(Armazenamento4);
+
+    Peca Armazenamento5 = new Peca();
+    Armazenamento5.Tipo = 4;
+    Armazenamento5.Nome = "Armazenamento 480 Gb SSD";
+    listaProdutos.Add(Armazenamento5);
+
+    Peca Armazenamento6 = new Peca();
+    Armazenamento6.Tipo = 4;
+    Armazenamento6.Nome = "Armazenamento 960 Gb SSD";
+    listaProdutos.Add(Armazenamento6);
 
   //########################################################################################
 
+    Peca Fonte4 = new Peca();
+    Fonte4.Tipo = 5;
+    Fonte4.Nome = "250W";
+    listaProdutos.Add(Fonte4);
+
+    Peca Fonte5 = new Peca();
+    Fonte5.Tipo = 5;
+    Fonte5.Nome = "300W";
+    listaProdutos.Add(Fonte5);
+
+    Peca Fonte6 = new Peca();
+    Fonte6.Tipo = 5;
+    Fonte6.Nome = "350W";
+    listaProdutos.Add(Fonte6);
+
+    Peca Fonte7 = new Peca();
+    Fonte7.Tipo = 5;
+    Fonte7.Nome = "400W";
+    listaProdutos.Add(Fonte7);
+
     Peca Fonte = new Peca();
     Fonte.Tipo = 5;
-    Fonte.Nome = "400W";
+    Fonte.Nome = "450W";
     listaProdutos.Add(Fonte);
     
     Peca Fonte2 = new Peca();
     Fonte2.Tipo = 5;
-    Fonte2.Nome = "600W";
+    Fonte2.Nome = "700W";
     listaProdutos.Add(Fonte2);
 
     Peca Fonte3 = new Peca();
@@ -385,22 +554,58 @@
     PlacadeVideo4.Nome = "RTX 4090 Ti";
     listaProdutos.Add(PlacadeVideo4);
 
+    Peca PlacadeVideo5 = new Peca();
+    PlacadeVideo5.Tipo = 7;
+    PlacadeVideo5.Nome = "GTX 520 ";
+    listaProdutos.Add(PlacadeVideo5);
+
+    Peca PlacadeVideo6 = new Peca();
+    PlacadeVideo6.Tipo = 7;
+    PlacadeVideo6.Nome = "GTX 1070 Ti";
+    listaProdutos.Add(PlacadeVideo6);
+
+    Peca PlacadeVideo7 = new Peca();
+    PlacadeVideo7.Tipo = 7;
+    PlacadeVideo7.Nome = "GTX 2090 Ti";
+    listaProdutos.Add(PlacadeVideo7);
+
   //########################################################################################
 
     Peca Cooler = new Peca();
     Cooler.Tipo = 8;
-    Cooler.Nome = "Cooler 4 pas";
+    Cooler.Nome = "Ventoinha Cooler Micro Ventilador 40 X 40 X 10mm 12v 5000rpm - Mxt";
     listaProdutos.Add(Cooler);
 
     Peca Cooler2 = new Peca();
     Cooler2.Tipo = 8;
-    Cooler2.Nome = "Cooler 5 pas";
+    Cooler2.Nome = "Cooler Master Sickleflow 120mm Rgb Fan Para Gabinete";
     listaProdutos.Add(Cooler2);
 
     Peca Cooler3 = new Peca();
     Cooler3.Tipo = 8;
-    Cooler3.Nome = "Cooler 6 pas";
+    Cooler3.Nome = "Cooler Universal Mymax Polaris, Para Intel E AMD, Led Rgb";
     listaProdutos.Add(Cooler3);
+
+    Peca Cooler4 = new Peca();
+    Cooler4.Tipo = 8;
+    Cooler4.Nome = "Cooler Fan Rise Mode Vibe, RGB, 120mm, Preto - RM-FC-03-12V";
+    listaProdutos.Add(Cooler4);
+
+    Peca Cooler5 = new Peca();
+    Cooler5.Tipo = 8;
+    Cooler5.Nome = "Iwongou caso ventilador cooler pc 120mm kit ventilador rgb ";
+    listaProdutos.Add(Cooler5);
+
+    Peca Cooler6 = new Peca();
+    Cooler6.Tipo = 8;
+    Cooler6.Nome = "Cooler Fan Individual Rise Mode Branco 120mm Rgb 5v RM-MB-02-5V";
+    listaProdutos.Add(Cooler6);
+
+    Peca Cooler7 = new Peca();
+    Cooler7.Tipo = 8;
+    Cooler7.Nome = "Cooler Led 120mm Ventoinha 120x120 Gabinete CPU Arco-Íris RGB";
+    listaProdutos.Add(Cooler7);
+
   //########################################################################################
 
     Peca WaterCooler = new Peca();
@@ -416,7 +621,28 @@
     Peca WaterCooler3 = new Peca();
     WaterCooler3.Tipo = 9;
     WaterCooler3.Nome = "Water Cooler Corsair ICUE H170I Elite Capellix, RGB, 420mm, CW-9060055-WW";
-    listaProdutos.Add(WaterCooler3);    
+    listaProdutos.Add(WaterCooler3);
+
+    Peca WaterCooler4 = new Peca();
+    WaterCooler4.Tipo = 9;
+    WaterCooler4.Nome = "Bykski Split Water Cooling PWM D5";
+    listaProdutos.Add(WaterCooler4);
+
+    Peca WaterCooler5 = new Peca();
+    WaterCooler5.Tipo = 9;
+    WaterCooler5.Nome = "Water Cooler Aigo Ac 120 Rgb";
+    listaProdutos.Add(WaterCooler5);
+
+    Peca WaterCooler6 = new Peca();
+    WaterCooler6.Tipo = 9;
+    WaterCooler6.Nome = "Water Cooler DeepCool Gammaxx LE500, 240mm, Preto, R-LE500-BKLNMG-G-1";
+    listaProdutos.Add(WaterCooler6);
+
+    Peca WaterCooler7 = new Peca();
+    WaterCooler7.Tipo = 9;
+    WaterCooler7.Nome = "WATER COOLER PARA COMPUTADOR GAMER COM LED RGB INTEL E AMD";
+    listaProdutos.Add(WaterCooler7);
+
     //########################################################################################
 
     Peca Teclado = new Peca();
@@ -431,8 +657,29 @@
 
     Peca Teclado3 = new Peca();
     Teclado3.Tipo = 10;
-    Teclado3.Nome = "Water Cooler Corsair ICUE H170I Elite Capellix, RGB, 420mm, CW-9060055-WW";
+    Teclado3.Nome = "Teclado Gamer AGK630";
     listaProdutos.Add(Teclado3);
+
+    Peca Teclado4 = new Peca();
+    Teclado4.Tipo = 10;
+    Teclado4.Nome = "Teclado Gamer Warrior Ragnar TC222 Led - Metal";
+    listaProdutos.Add(Teclado4);
+
+    Peca Teclado5 = new Peca();
+    Teclado5.Tipo = 10;
+    Teclado5.Nome = "Teclado Gamer Hawke Evolut";
+    listaProdutos.Add(Teclado5);
+
+    Peca Teclado6 = new Peca();
+    Teclado6.Tipo = 10;
+    Teclado6.Nome = "Teclado Gamer Saitek Eclipse I2";
+    listaProdutos.Add(Teclado6);
+
+    Peca Teclado7 = new Peca();
+    Teclado7.Tipo = 10;
+    Teclado7.Nome = "Teclado LEY-82 mecânico gamer Mix RGB";
+    listaProdutos.Add(Teclado7);
+
     //########################################################################################
 
     Peca Gabinete = new Peca();
@@ -449,5 +696,136 @@
     Gabinete3.Tipo = 12;
     Gabinete3.Nome = "Gabinete Gamer Top Tag F922RD";
     listaProdutos.Add(Gabinete3);
+
+    Peca Gabinete4 = new Peca();
+    Gabinete4.Tipo = 12;
+    Gabinete4.Nome = "Gabinete Gamer Lian Li O11 Dynamic XL Rog Full Tower";
+    listaProdutos.Add(Gabinete4);
+
+    Peca Gabinete5 = new Peca();
+    Gabinete5.Tipo = 12;
+    Gabinete5.Nome = "Gabinete H510 Black - Ca-h510b-b1 - NZXT";
+    listaProdutos.Add(Gabinete5);
+
+    Peca Gabinete6 = new Peca();
+    Gabinete6.Tipo = 12;
+    Gabinete6.Nome = "Kit 3 cooler para gabinete cpu pc gamer rgb com controle";
+    listaProdutos.Add(Gabinete6);
+
+    Peca Gabinete7 = new Peca();
+    Gabinete7.Tipo = 12;
+    Gabinete7.Nome = "Gabinete Gamer Aigo Darkflash DK352 Mesh, Mid-Tower";
+    listaProdutos.Add(Gabinete7);
+
+    //########################################################################################
+
+    Peca CoolersRGB = new Peca();
+    CoolersRGB.Tipo = 13;
+    CoolersRGB.Nome = "Fan Cooler Deepcool RF120 Fs, 120mm, Rgb";
+    listaProdutos.Add(CoolersRGB);
+
+    Peca CoolersRGB2 = new Peca();
+    CoolersRGB2.Tipo = 13;
+    CoolersRGB2.Nome = "Cooler Fan Rise Mode Wind Rainbow 120mm Preto";
+    listaProdutos.Add(CoolersRGB2);
+
+    Peca CoolersRGB3 = new Peca();
+    CoolersRGB3.Tipo = 13;
+    CoolersRGB3.Nome = "Kit Cooler 3 Fan Rgb Gamer Bpc - Brazil Pc";
+    listaProdutos.Add(CoolersRGB3);
+
+    Peca CoolersRGB4 = new Peca();
+    CoolersRGB4.Tipo = 13;
+    CoolersRGB4.Nome = "Air Cooler Rgb Rise Mode Gamer G200 Processador Intel Amd";
+    listaProdutos.Add(CoolersRGB4);
+
+    Peca CoolersRGB5 = new Peca();
+    CoolersRGB5.Tipo = 13;
+    CoolersRGB5.Nome = "Kit Cooler K-Mex AK-AAE1 Argb C/ 3 Fans";
+    listaProdutos.Add(CoolersRGB5);
+
+    Peca CoolersRGB6 = new Peca();
+    CoolersRGB6.Tipo = 13;
+    CoolersRGB6.Nome = "Gt18 Rgb CooLer Magnético";
+    listaProdutos.Add(CoolersRGB6);
+
+    Peca CoolersRGB7 = new Peca();
+    CoolersRGB7.Tipo = 13;
+    CoolersRGB7.Nome = "Cooler Mtek 120mm. RGB Led Fan - MF-120";
+    listaProdutos.Add(CoolersRGB7);
+
+    //########################################################################################
+
+    Peca Leds = new Peca();
+    Leds.Tipo = 14;
+    Leds.Nome = "Led Rgb Captação Ativadas Por Voz Com Luz Inteligente Game Pc Tv Som Automotivo";
+    listaProdutos.Add(Leds);
+
+    Peca Leds2 = new Peca();
+    Leds2.Tipo = 14;
+    Leds2.Nome = "FITA LED RGB 5050 5M IP65 COM CONTROLE E FONTE";
+    listaProdutos.Add(Leds2);
+
+    Peca Leds3 = new Peca();
+    Leds3.Tipo = 14;
+    Leds3.Nome = "FITA LED RGB 50CM C/ CONTROLE, PG-LED50RGB";
+    listaProdutos.Add(Leds3);
+
+    Peca Leds4 = new Peca();
+    Leds4.Tipo = 14;
+    Leds4.Nome = "Fita Led Rgb Sync Pro Sleeved 4 Pinos Gabinete Pc Gamer 1,5m";
+    listaProdutos.Add(Leds4);
+
+    Peca Leds5 = new Peca();
+    Leds5.Tipo = 14;
+    Leds5.Nome = "Led Lighting 3pin 5v Rgb Controller";
+    listaProdutos.Add(Leds5);
+
+    Peca Leds6 = new Peca();
+    Leds6.Tipo = 14;
+    Leds6.Nome = "Cabo Sleeved Extensor 24 Pinos Rgb Sleeved Para Computador";
+    listaProdutos.Add(Leds6);
+
+    Peca Leds7 = new Peca();
+    Leds7.Tipo = 14;
+    Leds7.Nome = "Fita Led Indução Rgb";
+    listaProdutos.Add(Leds7);
+
+    //########################################################################################
+
+    Peca Mouse = new Peca();
+    Mouse.Tipo = 15;
+    Mouse.Nome = "Fortrek OM-801";
+    listaProdutos.Add(Mouse);
+
+    Peca Mouse2 = new Peca();
+    Mouse2.Tipo = 15;
+    Mouse2.Nome = "Razer Deathadder Essential";
+    listaProdutos.Add(Mouse2);
+
+    Peca Mouse3 = new Peca();
+    Mouse3.Tipo = 15;
+    Mouse3.Nome = "Logitech G403 HERO";
+    listaProdutos.Add(Mouse3);
+
+    Peca Mouse4 = new Peca();
+    Mouse4.Tipo = 15;
+    Mouse4.Nome = "Sem Fio Logitech G703 LIGHTSPEED";
+    listaProdutos.Add(Mouse4);
+
+    Peca Mouse5 = new Peca();
+    Mouse5.Tipo = 15;
+    Mouse5.Nome = "Logitech G502 HERO K/DA";
+    listaProdutos.Add(Mouse5);
+
+    Peca Mouse6 = new Peca();
+    Mouse6.Tipo = 15;
+    Mouse6.Nome = "Razer Deathadder Essential White Edition";
+    listaProdutos.Add(Mouse6);
+
+    Peca Mouse7 = new Peca();
+    Mouse7.Tipo = 15;
+    Mouse7.Nome = "Redragon Cobra, RGB";
+    listaProdutos.Add(Mouse7);
   }
 }
