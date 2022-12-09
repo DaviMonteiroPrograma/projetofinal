@@ -6,34 +6,34 @@
 <nav class="nav">
   <ul>
     <a href="#"><li>Placa mãe</li></a>
-    <BSButton Color="BSColor.Primary" Target="modalPlacaMae">Opções</BSButton>
+    <BSButton  Color="BSColor.Primary" Target="modalPlacaMae">Opções</BSButton>
     <a href="#"><li>Processador</li></a>
-    <BSButton Color="BSColor.Primary" Target="modalProcessador">Opções</BSButton>
+    <BSButton  Color="BSColor.Primary" Target="modalProcessador">Opções</BSButton>
     <a href="#"><li>Memória (SSD ou HDD)</li></a>
-    <BSButton Color="BSColor.Primary" Target="modalArmazenamento">Opções</BSButton>
+    <BSButton  Color="BSColor.Primary" Target="modalArmazenamento">Opções</BSButton>
     <a href="#"><li>Memória Ram(DDR's)</li></a>
-    <BSButton Color="BSColor.Primary" Target="modalMemoria_Ram">Opções</BSButton>
+    <BSButton  Color="BSColor.Primary" Target="modalMemoria_Ram">Opções</BSButton>
     <a href="#"><li>Cooler</li></a>
-    <BSButton Color="BSColor.Primary" Target="modalCooler">Opções</BSButton>
+    <BSButton  Color="BSColor.Primary" Target="modalCooler">Opções</BSButton>
     <a href="#"><li>Water Cooler</li></a>
-    <BSButton Color="BSColor.Primary" Target="modalW_Cooler">Opções</BSButton>
+    <BSButton  Color="BSColor.Primary" Target="modalW_Cooler">Opções</BSButton>
     <a href="#"><li>Fonte</li></a>
-    <BSButton Color="BSColor.Primary" Target="modalFonte">Opções</BSButton>
+    <BSButton  Color="BSColor.Primary" Target="modalFonte">Opções</BSButton>
     <a href="#"><li>Placa de Vídeo</li></a>
-    <BSButton Color="BSColor.Primary" Target="modalPlaca_Video">Opções</BSButton>
+    <BSButton  Color="BSColor.Primary" Target="modalPlaca_Video">Opções</BSButton>
     <a href="#"><li>---------------------------------</li></a>
     <a href="#"><li>Monitores</li></a>
-    <BSButton Color="BSColor.Primary" Target="modalMonitor">Opções</BSButton>
+    <BSButton  Color="BSColor.Primary" Target="modalMonitor">Opções</BSButton>
     <a href="#"><li>Gabinetes</li></a>
-    <BSButton Color="BSColor.Primary" Target="modalGabinete">Opções</BSButton>
+    <BSButton  Color="BSColor.Primary" Target="modalGabinete">Opções</BSButton>
     <a href="#"><li>Cooler's</li></a>
-    <BSButton Color="BSColor.Primary" Target="modalCoolerRGB">Opções</BSButton>
+    <BSButton  Color="BSColor.Primary" Target="modalCoolerRGB">Opções</BSButton>
     <a href="#"><li>Led's</li></a>
-    <BSButton Color="BSColor.Primary" Target="modalLeds">Opções</BSButton>
+    <BSButton  Color="BSColor.Primary" Target="modalLeds">Opções</BSButton>
     <a href="#"><li>Teclados</li></a>
-    <BSButton Color="BSColor.Primary" Target="modalTeclado">Opções</BSButton>
+    <BSButton  Color="BSColor.Primary" Target="modalTeclado">Opções</BSButton>
     <a href="#"><li>Mause</li></a>
-    <BSButton Color="BSColor.Primary" Target="modalMouse">Opções</BSButton>
+    <BSButton  Color="BSColor.Primary" Target="modalMouse">Opções</BSButton>
     
     
   </ul>
@@ -58,7 +58,7 @@
     </Content>
     <Footer Context="modal">
         <BSButton MarginStart="Margins.Auto" Color="BSColor.Secondary" @onclick="modal.HideAsync">Close</BSButton>
-        <BSButton Color="BSColor.Primary">Save changes</BSButton>
+        <BSButton @onclick="SaveChanges" Color="BSColor.Primary">Save changes</BSButton>
     </Footer>
 </BSModal>
 
@@ -317,6 +317,25 @@
 @code
 {
   List<Peca> listaProdutos = new List<Peca>();
+  
+  public void SaveChanges(){
+   List<String> errors = new List<String>(); 
+   if(SaveChanges== placaMae){
+      
+      if(SaveChanges == processador7){
+        errors.Add("este processador não pode ser selecionado, a Placa Mão não tem suporte para ele. Tente outro");
+      }
+      if(SaveChanges == Fonte4 || Fonte5 || Fonte6 || Fonte7 ){
+        errors.Add("A fonte não se adéqua aos parametros");
+      }
+      if(SaveChanges == PlacadeVideo4){
+        errors.Add("A Placa mãe não suporte essa placa de video, Teste Placas de Videos inferiores");
+      }
+      
+    }
+  }
+
+
 
   protected override async Task OnAfterRenderAsync(bool firstRender)
   {
@@ -326,6 +345,8 @@
     placaMae.Tipo = 1;
     placaMae.Nome = "Placa Mãe Gigabyte B550M AORUS ELITE";
     listaProdutos.Add(placaMae);
+
+    
 
     Peca placaMae2 = new Peca();
     placaMae2.Tipo = 1;
@@ -439,7 +460,7 @@
 
     Peca M_Ram9 = new Peca();
     M_Ram9.Tipo = 3;
-    M_Ram9.Nome = "Pente de Ram 16Gb Ddr-6";
+    M_Ram9.Nome = "Pente de Ram 16Gb Ddr-5";
     listaProdutos.Add(M_Ram9);
 
     Peca M_Ram10 = new Peca();
