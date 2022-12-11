@@ -47,7 +47,12 @@
 <BSModal DataId="modalPlacaMae">
     <Header>Modal Title</Header>
     <Content>
-      <BSInput InputType="InputType.Select" Value="0" InputSize="Size.Large" MarginBottom="Margins.Medium">
+      <BSInput InputType="InputType.Select" Value="0" InputSize="Size.Large" MarginBottom="Margins.Medium"  @bind-Value="_value">
+       <option value="null">menu de seleção</option>
+       <option value="1">One</option>
+       <option value="2">Two</option>
+       <option value="3">Three</option>
+
         @foreach (var nome in from p in listaProdutos 
                               where p.Tipo == 1
                               select p.Nome)
@@ -65,13 +70,14 @@
 <BSModal DataId="modalProcessador">
     <Header>Modal Title</Header>
     <Content>
-      <BSInput InputType="InputType.Select" Value="0" InputSize="Size.Large" MarginBottom="Margins.Medium">
+      <BSInput InputType="InputType.Select" Value="0" InputSize="Size.Large" MarginBottom="Margins.Medium" >
         @foreach (var nome in from p in listaProdutos 
                               where p.Tipo == 2
                               select p.Nome)
         {
           <option>@nome</option>
         }
+
       </BSInput>
     </Content>
     <Footer Context="modal">
@@ -320,19 +326,7 @@
   
   public void SaveChanges(){
    List<String> errors = new List<String>(); 
-   if(SaveChanges== placaMae){
-      
-      if(SaveChanges == processador7){
-        errors.Add("este processador não pode ser selecionado, a Placa Mão não tem suporte para ele. Tente outro");
-      }
-      if(SaveChanges == Fonte4 || Fonte5 || Fonte6 || Fonte7 ){
-        errors.Add("A fonte não se adéqua aos parametros");
-      }
-      if(SaveChanges == PlacadeVideo4){
-        errors.Add("A Placa mãe não suporte essa placa de video, Teste Placas de Videos inferiores");
-      }
-      
-    }
+   
   }
 
 
@@ -345,8 +339,6 @@
     placaMae.Tipo = 1;
     placaMae.Nome = "Placa Mãe Gigabyte B550M AORUS ELITE";
     listaProdutos.Add(placaMae);
-
-    
 
     Peca placaMae2 = new Peca();
     placaMae2.Tipo = 1;
