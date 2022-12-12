@@ -115,7 +115,6 @@ C:\Users\Aluno\Documents\GitHub\projetofinal\front\obj\Debug\net6.0\scopedcss\Sh
 C:\Users\Aluno\Documents\GitHub\projetofinal\front\obj\Debug\net6.0\scopedcss\bundle\front.styles.css
 C:\Users\Aluno\Documents\GitHub\projetofinal\front\obj\Debug\net6.0\scopedcss\projectbundle\front.bundle.scp.css
 C:\Users\Aluno\Documents\GitHub\projetofinal\front\obj\Debug\net6.0\front.dll
-C:\Users\Aluno\Documents\GitHub\projetofinal\front\obj\Debug\net6.0\refint\front.dll
 C:\Users\Aluno\Documents\GitHub\projetofinal\front\obj\Debug\net6.0\front.pdb
 C:\Users\Aluno\Documents\GitHub\projetofinal\front\obj\Debug\net6.0\front.genruntimeconfig.cache
 C:\Users\Aluno\Documents\GitHub\projetofinal\front\obj\Debug\net6.0\ref\front.dll
@@ -203,3 +202,15 @@ C:\Users\DAVI\Documents\GitHub\projetofinal\front\obj\Debug\net6.0\scopedcss\pro
 C:\Users\DAVI\Documents\GitHub\projetofinal\front\obj\Debug\net6.0\front.csproj.CopyComplete
 C:\Users\DAVI\Documents\GitHub\projetofinal\front\obj\Debug\net6.0\front.genruntimeconfig.cache
 C:\Users\DAVI\Documents\GitHub\projetofinal\front\obj\Debug\net6.0\ref\front.dll
+C:\Users\Aluno\Documents\GitHub\projetofinal\front\bin\Debug\net6.0\ref\front.dll
+C:\Users\Aluno\Documents\GitHub\projetofinal\front\bin\Debug\net6.0\BlazorComponentUtilities.dll
+C:\Users\Aluno\Documents\GitHub\projetofinal\front\bin\Debug\net6.0\BlazorStrap.dll
+C:\Users\Aluno\Documents\GitHub\projetofinal\front\bin\Debug\net6.0\Microsoft.AspNetCore.Authorization.dll
+C:\Users\Aluno\Documents\GitHub\projetofinal\front\bin\Debug\net6.0\Microsoft.AspNetCore.Components.dll
+C:\Users\Aluno\Documents\GitHub\projetofinal\front\bin\Debug\net6.0\Microsoft.AspNetCore.Components.Forms.dll
+C:\Users\Aluno\Documents\GitHub\projetofinal\front\bin\Debug\net6.0\Microsoft.AspNetCore.Components.Web.dll
+C:\Users\Aluno\Documents\GitHub\projetofinal\front\bin\Debug\net6.0\Microsoft.AspNetCore.Metadata.dll
+C:\Users\Aluno\Documents\GitHub\projetofinal\front\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Aluno\Documents\GitHub\projetofinal\front\bin\Debug\net6.0\Microsoft.JSInterop.dll
+C:\Users\Aluno\Documents\GitHub\projetofinal\front\bin\Debug\net6.0\System.IO.Pipelines.dll
+C:\Users\Aluno\Documents\GitHub\projetofinal\front\obj\Debug\net6.0\front.csproj.CopyComplete

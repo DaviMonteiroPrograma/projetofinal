@@ -47,18 +47,16 @@
 <BSModal DataId="modalPlacaMae">
     <Header>Modal Title</Header>
     <Content>
-      <BSInput InputType="InputType.Select" Value="0" InputSize="Size.Large" MarginBottom="Margins.Medium"  @bind-Value="_value">
-       <option value="null">menu de seleção</option>
-       <option value="1">One</option>
-       <option value="2">Two</option>
-       <option value="3">Three</option>
+      <BSInput InputType="InputType.Select" InputSize="Size.Large" MarginBottom="Margins.Medium" @bind-Value="_value">
+     
 
-        @foreach (var nome in from p in listaProdutos 
-                              where p.Tipo == 1
-                              select p.Nome)
-        {
+        @foreach (var nome in from p in listaProdutos
+                             where p.Tipo == 1
+                             select p.Nome)
+        {                               
           <option>@nome</option>
         }
+        
       </BSInput>
     </Content>
     <Footer Context="modal">
@@ -76,6 +74,7 @@
                               select p.Nome)
         {
           <option>@nome</option>
+
         }
 
       </BSInput>
@@ -322,6 +321,7 @@
 
 @code
 {
+  string _value = "";
   List<Peca> listaProdutos = new List<Peca>();
   
   public void SaveChanges(){

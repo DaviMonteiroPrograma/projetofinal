@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+eonjcQGOr7IgkHnJatDGAZ1Dl9U/R6Q3BvhCSUIFs8=",
+  "Hash": "gXlOrBab07TQ7ekgv5Aen9Arv94zcZxitwv3xOCrqSk=",
   "Source": "front",
   "BasePath": "_content/front",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "front\\wwwroot",
       "Source": "front",
-      "ContentRoot": "C:\\Users\\DAVI\\Documents\\GitHub\\projetofinal\\front\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno\\Documents\\GitHub\\projetofinal\\front\\wwwroot\\",
       "BasePath": "_content/front",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\DAVI\\.nuget\\packages\\blazorstrap\\5.0.106\\staticwebassets\\BlazorStrap.bundle.scp.css",
+      "Identity": "C:\\Users\\Aluno\\.nuget\\packages\\blazorstrap\\5.0.106\\staticwebassets\\BlazorStrap.bundle.scp.css",
       "SourceId": "BlazorStrap",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\DAVI\\.nuget\\packages\\blazorstrap\\5.0.106\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\Aluno\\.nuget\\packages\\blazorstrap\\5.0.106\\staticwebassets\\",
       "BasePath": "_content/BlazorStrap",
       "RelativePath": "BlazorStrap.bundle.scp.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\DAVI\\.nuget\\packages\\blazorstrap\\5.0.106\\staticwebassets\\BlazorStrap.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\Aluno\\.nuget\\packages\\blazorstrap\\5.0.106\\staticwebassets\\BlazorStrap.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\DAVI\\.nuget\\packages\\blazorstrap\\5.0.106\\staticwebassets\\blazorstrap.js",
+      "Identity": "C:\\Users\\Aluno\\.nuget\\packages\\blazorstrap\\5.0.106\\staticwebassets\\blazorstrap.js",
       "SourceId": "BlazorStrap",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\DAVI\\.nuget\\packages\\blazorstrap\\5.0.106\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\Aluno\\.nuget\\packages\\blazorstrap\\5.0.106\\staticwebassets\\",
       "BasePath": "_content/BlazorStrap",
       "RelativePath": "blazorstrap.js",
       "AssetKind": "All",
@@ -48,13 +48,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\DAVI\\.nuget\\packages\\blazorstrap\\5.0.106\\staticwebassets\\blazorstrap.js"
+      "OriginalItemSpec": "C:\\Users\\Aluno\\.nuget\\packages\\blazorstrap\\5.0.106\\staticwebassets\\blazorstrap.js"
     },
     {
-      "Identity": "C:\\Users\\DAVI\\.nuget\\packages\\blazorstrap\\5.0.106\\staticwebassets\\blazorstrap.min.js",
+      "Identity": "C:\\Users\\Aluno\\.nuget\\packages\\blazorstrap\\5.0.106\\staticwebassets\\blazorstrap.min.js",
       "SourceId": "BlazorStrap",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\DAVI\\.nuget\\packages\\blazorstrap\\5.0.106\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\Aluno\\.nuget\\packages\\blazorstrap\\5.0.106\\staticwebassets\\",
       "BasePath": "_content/BlazorStrap",
       "RelativePath": "blazorstrap.min.js",
       "AssetKind": "All",
@@ -65,13 +65,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\DAVI\\.nuget\\packages\\blazorstrap\\5.0.106\\staticwebassets\\blazorstrap.min.js"
+      "OriginalItemSpec": "C:\\Users\\Aluno\\.nuget\\packages\\blazorstrap\\5.0.106\\staticwebassets\\blazorstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\DAVI\\.nuget\\packages\\blazorstrap\\5.0.106\\staticwebassets\\popper.min.js",
+      "Identity": "C:\\Users\\Aluno\\.nuget\\packages\\blazorstrap\\5.0.106\\staticwebassets\\popper.min.js",
       "SourceId": "BlazorStrap",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\DAVI\\.nuget\\packages\\blazorstrap\\5.0.106\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\Aluno\\.nuget\\packages\\blazorstrap\\5.0.106\\staticwebassets\\",
       "BasePath": "_content/BlazorStrap",
       "RelativePath": "popper.min.js",
       "AssetKind": "All",
@@ -82,13 +82,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\DAVI\\.nuget\\packages\\blazorstrap\\5.0.106\\staticwebassets\\popper.min.js"
+      "OriginalItemSpec": "C:\\Users\\Aluno\\.nuget\\packages\\blazorstrap\\5.0.106\\staticwebassets\\popper.min.js"
     },
     {
-      "Identity": "C:\\Users\\DAVI\\Documents\\GitHub\\projetofinal\\front\\obj\\Debug\\net6.0\\scopedcss\\bundle\\front.styles.css",
+      "Identity": "C:\\Users\\Aluno\\Documents\\GitHub\\projetofinal\\front\\obj\\Debug\\net6.0\\scopedcss\\bundle\\front.styles.css",
       "SourceId": "front",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\DAVI\\Documents\\GitHub\\projetofinal\\front\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\Aluno\\Documents\\GitHub\\projetofinal\\front\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/front",
       "RelativePath": "front.styles.css",
       "AssetKind": "All",
@@ -99,13 +99,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\DAVI\\Documents\\GitHub\\projetofinal\\front\\obj\\Debug\\net6.0\\scopedcss\\bundle\\front.styles.css"
+      "OriginalItemSpec": "C:\\Users\\Aluno\\Documents\\GitHub\\projetofinal\\front\\obj\\Debug\\net6.0\\scopedcss\\bundle\\front.styles.css"
     },
     {
-      "Identity": "C:\\Users\\DAVI\\Documents\\GitHub\\projetofinal\\front\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\front.bundle.scp.css",
+      "Identity": "C:\\Users\\Aluno\\Documents\\GitHub\\projetofinal\\front\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\front.bundle.scp.css",
       "SourceId": "front",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\DAVI\\Documents\\GitHub\\projetofinal\\front\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\Aluno\\Documents\\GitHub\\projetofinal\\front\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/front",
       "RelativePath": "front.bundle.scp.css",
       "AssetKind": "All",
@@ -116,13 +116,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\DAVI\\Documents\\GitHub\\projetofinal\\front\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\front.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\Aluno\\Documents\\GitHub\\projetofinal\\front\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\front.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\DAVI\\Documents\\GitHub\\projetofinal\\front\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Identity": "C:\\Users\\Aluno\\Documents\\GitHub\\projetofinal\\front\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "SourceId": "front",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\DAVI\\Documents\\GitHub\\projetofinal\\front\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno\\Documents\\GitHub\\projetofinal\\front\\wwwroot\\",
       "BasePath": "_content/front",
       "RelativePath": "css/bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\DAVI\\Documents\\GitHub\\projetofinal\\front\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\Aluno\\Documents\\GitHub\\projetofinal\\front\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "front",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\DAVI\\Documents\\GitHub\\projetofinal\\front\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno\\Documents\\GitHub\\projetofinal\\front\\wwwroot\\",
       "BasePath": "_content/front",
       "RelativePath": "css/bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\DAVI\\Documents\\GitHub\\projetofinal\\front\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "Identity": "C:\\Users\\Aluno\\Documents\\GitHub\\projetofinal\\front\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
       "SourceId": "front",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\DAVI\\Documents\\GitHub\\projetofinal\\front\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno\\Documents\\GitHub\\projetofinal\\front\\wwwroot\\",
       "BasePath": "_content/front",
       "RelativePath": "css/open-iconic/FONT-LICENSE",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
     },
     {
-      "Identity": "C:\\Users\\DAVI\\Documents\\GitHub\\projetofinal\\front\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "Identity": "C:\\Users\\Aluno\\Documents\\GitHub\\projetofinal\\front\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
       "SourceId": "front",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\DAVI\\Documents\\GitHub\\projetofinal\\front\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno\\Documents\\GitHub\\projetofinal\\front\\wwwroot\\",
       "BasePath": "_content/front",
       "RelativePath": "css/open-iconic/font/css/open-iconic-bootstrap.min.css",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\DAVI\\Documents\\GitHub\\projetofinal\\front\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "Identity": "C:\\Users\\Aluno\\Documents\\GitHub\\projetofinal\\front\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
       "SourceId": "front",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\DAVI\\Documents\\GitHub\\projetofinal\\front\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno\\Documents\\GitHub\\projetofinal\\front\\wwwroot\\",
       "BasePath": "_content/front",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.eot",
       "AssetKind": "All",
@@ -204,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
     },
     {
-      "Identity": "C:\\Users\\DAVI\\Documents\\GitHub\\projetofinal\\front\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "Identity": "C:\\Users\\Aluno\\Documents\\GitHub\\projetofinal\\front\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
       "SourceId": "front",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\DAVI\\Documents\\GitHub\\projetofinal\\front\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno\\Documents\\GitHub\\projetofinal\\front\\wwwroot\\",
       "BasePath": "_content/front",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.otf",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
     },
     {
-      "Identity": "C:\\Users\\DAVI\\Documents\\GitHub\\projetofinal\\front\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "Identity": "C:\\Users\\Aluno\\Documents\\GitHub\\projetofinal\\front\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
       "SourceId": "front",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\DAVI\\Documents\\GitHub\\projetofinal\\front\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno\\Documents\\GitHub\\projetofinal\\front\\wwwroot\\",
       "BasePath": "_content/front",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.svg",
       "AssetKind": "All",
@@ -238,10 +238,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
     },
     {
-      "Identity": "C:\\Users\\DAVI\\Documents\\GitHub\\projetofinal\\front\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "Identity": "C:\\Users\\Aluno\\Documents\\GitHub\\projetofinal\\front\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
       "SourceId": "front",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\DAVI\\Documents\\GitHub\\projetofinal\\front\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno\\Documents\\GitHub\\projetofinal\\front\\wwwroot\\",
       "BasePath": "_content/front",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.ttf",
       "AssetKind": "All",
@@ -255,10 +255,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
     },
     {
-      "Identity": "C:\\Users\\DAVI\\Documents\\GitHub\\projetofinal\\front\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "Identity": "C:\\Users\\Aluno\\Documents\\GitHub\\projetofinal\\front\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
       "SourceId": "front",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\DAVI\\Documents\\GitHub\\projetofinal\\front\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno\\Documents\\GitHub\\projetofinal\\front\\wwwroot\\",
       "BasePath": "_content/front",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.woff",
       "AssetKind": "All",
@@ -272,10 +272,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
     },
     {
-      "Identity": "C:\\Users\\DAVI\\Documents\\GitHub\\projetofinal\\front\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "Identity": "C:\\Users\\Aluno\\Documents\\GitHub\\projetofinal\\front\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
       "SourceId": "front",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\DAVI\\Documents\\GitHub\\projetofinal\\front\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno\\Documents\\GitHub\\projetofinal\\front\\wwwroot\\",
       "BasePath": "_content/front",
       "RelativePath": "css/open-iconic/ICON-LICENSE",
       "AssetKind": "All",
@@ -289,10 +289,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\ICON-LICENSE"
     },
     {
-      "Identity": "C:\\Users\\DAVI\\Documents\\GitHub\\projetofinal\\front\\wwwroot\\css\\open-iconic\\README.md",
+      "Identity": "C:\\Users\\Aluno\\Documents\\GitHub\\projetofinal\\front\\wwwroot\\css\\open-iconic\\README.md",
       "SourceId": "front",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\DAVI\\Documents\\GitHub\\projetofinal\\front\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno\\Documents\\GitHub\\projetofinal\\front\\wwwroot\\",
       "BasePath": "_content/front",
       "RelativePath": "css/open-iconic/README.md",
       "AssetKind": "All",
@@ -306,10 +306,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\README.md"
     },
     {
-      "Identity": "C:\\Users\\DAVI\\Documents\\GitHub\\projetofinal\\front\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\Aluno\\Documents\\GitHub\\projetofinal\\front\\wwwroot\\css\\site.css",
       "SourceId": "front",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\DAVI\\Documents\\GitHub\\projetofinal\\front\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno\\Documents\\GitHub\\projetofinal\\front\\wwwroot\\",
       "BasePath": "_content/front",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -323,10 +323,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\DAVI\\Documents\\GitHub\\projetofinal\\front\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\Aluno\\Documents\\GitHub\\projetofinal\\front\\wwwroot\\favicon.ico",
       "SourceId": "front",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\DAVI\\Documents\\GitHub\\projetofinal\\front\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Aluno\\Documents\\GitHub\\projetofinal\\front\\wwwroot\\",
       "BasePath": "_content/front",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
